@@ -57,9 +57,9 @@ public class Hufflepuff extends Hogwarts {
                 "hardworking=" + hardworking +
                 ", fidelity=" + fidelity +
                 ", honest=" + honest +
-                ", name='" + name + '\'' +
-                ", powerOfMagic=" + powerOfMagic +
-                ", transgression=" + transgression +
+                ", name='" + getName() + '\'' +
+                ", powerOfMagic=" + getPowerOfMagic() +
+                ", transgression=" + getTransgression() +
                 '}';
     }
 }

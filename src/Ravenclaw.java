@@ -57,9 +57,9 @@ public class Ravenclaw extends Hogwarts {
                 "smart=" + smart +
                 ", wise=" + wise +
                 ", witty=" + witty +
-                ", name='" + name + '\'' +
-                ", powerOfMagic=" + powerOfMagic +
-                ", transgression=" + transgression +
+                ", name='" + getName() + '\'' +
+                ", powerOfMagic=" + getPowerOfMagic() +
+                ", transgression=" + getPowerOfMagic() +
                 '}';
     }
 }

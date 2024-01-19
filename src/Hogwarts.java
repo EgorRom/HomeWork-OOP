@@ -1,8 +1,8 @@
 abstract class Hogwarts {
 
-    String name;
-    int powerOfMagic;
-    int transgression;
+    private String name;
+    private int powerOfMagic;
+    private int transgression;
 
     public Hogwarts(String name, int powerOfMagic, int transgression) {
         this.name = name;
@@ -47,7 +47,14 @@ abstract class Hogwarts {
         }
     }
 
-
+    @Override
+    public  String toString() {
+        return "Hogwarts{" +
+                "name='" + name + '\'' +
+                ", powerOfMagic=" + powerOfMagic +
+                ", transgression=" + transgression +
+                '}';
+    }
 }
 
 

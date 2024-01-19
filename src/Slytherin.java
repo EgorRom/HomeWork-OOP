@@ -55,9 +55,9 @@ public class Slytherin extends Hogwarts {
                 "trick=" + trick +
                 ", determination=" + determination +
                 ", resourcefulness=" + resourcefulness +
-                ", name='" + name + '\'' +
-                ", powerOfMagic=" + powerOfMagic +
-                ", transgression=" + transgression +
+                ", name='" + getName() + '\'' +
+                ", powerOfMagic=" + getPowerOfMagic() +
+                ", transgression=" + getTransgression() +
                 '}';
     }
 }
