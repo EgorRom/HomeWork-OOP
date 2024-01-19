@@ -1,13 +1,13 @@
 abstract class Hogwarts {
 
-     String name;
-     int powerOfMagic;
-     int transgression;
+    String name;
+    int powerOfMagic;
+    int transgression;
 
-    public Hogwarts(String name,int powerOfMagic,int transgression) {
+    public Hogwarts(String name, int powerOfMagic, int transgression) {
         this.name = name;
-        this.powerOfMagic=powerOfMagic;
-        this.transgression=transgression;
+        this.powerOfMagic = powerOfMagic;
+        this.transgression = transgression;
     }
 
     public String getName() {
@@ -29,6 +29,7 @@ abstract class Hogwarts {
     public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
+
     public void compareAnyStudents(Hogwarts second) {
         if (this.getPowerOfMagic() > second.getPowerOfMagic()) {
             System.out.println(this.getName() + " сильнее чем " + second.getName());
@@ -45,7 +46,6 @@ abstract class Hogwarts {
             System.out.println(second.getName() + " дистанция трансгрессии больше чем у  " + this.getName());
         }
     }
-
 
 
 }

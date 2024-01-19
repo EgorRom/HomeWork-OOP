@@ -27,22 +27,24 @@ public class Slytherin extends Hogwarts {
         this.resourcefulness = resourcefulness;
     }
 
-    public Slytherin(String name,int powerOfMagic, int transgression, int trick, int determination, int resourcefulness) {
-        super(name,powerOfMagic,transgression);
+    public Slytherin(String name, int powerOfMagic, int transgression, int trick, int determination, int resourcefulness) {
+        super(name, powerOfMagic, transgression);
         this.trick = trick;
         this.determination = determination;
         this.resourcefulness = resourcefulness;
     }
+
     public void comparingStudentOfTheFaculty(Slytherin second) {
         if ((this.getTrick() + this.getDetermination() + this.getResourcefulness()) > (second.getTrick() + second.getDetermination() + second.getResourcefulness())) {
-            System.out.println(this.getName() + " лучший Слизеринец чем "+ second.getName());
+            System.out.println(this.getName() + " лучший Слизеринец чем " + second.getName());
         } else if ((this.getTrick() + this.getDetermination() + this.getResourcefulness()) == (second.getTrick() + second.getDetermination() + second.getResourcefulness())) {
-            System.out.println(this.getName()+ " также хорош как и "+ second.getName());
-        }else {
-            System.out.println(second.getName() + " лучший Слизеринец чем "+ this.getName());
+            System.out.println(this.getName() + " также хорош как и " + second.getName());
+        } else {
+            System.out.println(second.getName() + " лучший Слизеринец чем " + this.getName());
         }
 
     }
+
     public void informationAboutStudents() {
         System.out.println("Имя " + getName() + "; сила магии " + getPowerOfMagic() + "; трансгрессия " + getTransgression() + "; хитрость- " + getTrick() + "; решительность- " + getDetermination() + "; находчивость " + getResourcefulness());
     }
